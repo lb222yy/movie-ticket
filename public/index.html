@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CineMax 在线电影购票系统 —— 在线选座、购票、退改签、电子票，一站式观影服务">
+  <title>CineMax · 在线电影购票</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/base.css?v=20261125b">
+  <link rel="stylesheet" href="/css/home.css?v=20261125b">
+</head>
+<body>
+  <div id="headerRoot"></div>
+
+  <main>
+    <!-- 轮播广告位 -->
+    <section class="hero" id="hero" aria-label="精选影片轮播">
+      <div class="hero-slides" id="heroSlides"></div>
+      <button class="hero-arrow prev" id="heroPrev" aria-label="上一张">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+      <button class="hero-arrow next" id="heroNext" aria-label="下一张">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+      <div class="hero-content">
+        <div class="hero-kicker" id="heroKicker">CINEMAX · 本周精选</div>
+        <h1 id="heroTitle">正在加载…</h1>
+        <p class="hero-sub" id="heroSub"></p>
+        <div class="hero-meta" id="heroMeta"></div>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" id="heroCta" href="#now">立即购票</a>
+          <button class="btn btn-ghost btn-lg" id="heroTrailer">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg>
+            观看预告
+          </button>
+        </div>
+      </div>
+      <div class="hero-dots" id="heroDots"></div>
+    </section>
+
+    <!-- 搜索 -->
+    <section class="search-band">
+      <div class="container">
+        <div class="search-card">
+          <div class="search-main">
+            <label for="homeSearch">SEARCH MOVIES</label>
+            <form class="search-box" id="homeSearchForm">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+              <input id="homeSearch" name="keyword" type="search" placeholder="搜索影片、导演或类型，如「星际」" autocomplete="off">
+              <button class="btn btn-primary" type="submit">搜索</button>
+            </form>
+            <div class="search-history" id="searchHistory"></div>
+          </div>
+          <div class="search-side">
+            <div class="side-label">
+              <span id="historyLabel">搜索历史</span>
+              <button class="clear-history hidden" id="clearHistory">清空</button>
+            </div>
+            <div class="chips" id="historyChips"></div>
+            <div class="side-label" style="margin-top:4px"><span>热门搜索</span></div>
+            <div class="chips" id="hotChips">
+              <span class="chip"><button data-hot="星际">星际迷航</button></span>
+              <span class="chip"><button data-hot="暗夜">暗夜追凶</button></span>
+              <span class="chip"><button data-hot="猫猫">猫猫特工队</button></span>
+              <span class="chip"><button data-hot="长安">长安诗行</button></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-strip">
+          <div class="stat-item"><b id="statShowtimes">—</b><span>今日排片场次</span></div>
+          <div class="stat-item"><b id="statCinemas">4</b><span>合作影城</span></div>
+          <div class="stat-item"><b id="statSeats">—</b><span>可售座位</span></div>
+          <div class="stat-item"><b id="statMovies">—</b><span>在映影片</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 正在热映 -->
+    <section class="section container" id="now">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">正在热映</h2>
+          <p class="section-sub" id="nowSub">选一部好片，挑一个好座</p>
+        </div>
+        <div class="filter-row" id="genreFilter"></div>
+      </div>
+      <div class="now-layout">
+        <div>
+          <div class="movie-grid" id="nowGrid"></div>
+        </div>
+        <aside class="ranking">
+          <div class="ranking-head">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 19V5M4 19h16"/><path d="M8 16v-5M12.5 16V8M17 16v-8"/></svg>
+              实时票房榜
+            </h3>
+            <span>单位：元</span>
+          </div>
+          <div class="rank-list" id="rankList"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 即将上映 -->
+    <section class="section container" id="upcoming">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">即将上映</h2>
+          <p class="section-sub">提前加入想看，开票第一时间提醒你</p>
+        </div>
+        <a class="link-more" href="/index.html#upcoming">全部待映 →</a>
+      </div>
+      <div class="upcoming-rail" id="upcomingRail"></div>
+    </section>
+
+    <!-- 我的收藏 -->
+    <section class="section container" id="favorites">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">我的想看</h2>
+          <p class="section-sub">收藏的影片会保存在这里，随时开票</p>
+        </div>
+      </div>
+      <div id="favoritesBox"></div>
+    </section>
+  </main>
+
+  <div id="footerRoot"></div>
+
+  <script src="/js/api.js?v=20261125b"></script>
+  <script src="/js/ui.js?v=20261125b"></script>
+  <script src="/js/home.js?v=20261125b"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "cinemax-movie-ticket-system",
+  "version": "1.0.0",
+  "description": "CineMax 在线电影购票系统 - Web 程序设计期末小组项目（项目13）",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "init-db": "node server/seed.js",
+    "crawl": "node scripts/crawl-douban.js",
+    "crawl:apply": "node scripts/crawl-douban.js --apply",
+    "test:api": "node tests/api.test.js"
+  },
+  "keywords": ["movie", "ticket", "express", "sqlite", "vanilla-js"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "qrcode": "^1.5.4"
+  }
+}

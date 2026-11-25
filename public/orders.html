@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的票夹 · CineMax 在线电影购票</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/base.css?v=20261125b">
+  <link rel="stylesheet" href="/css/seat.css?v=20261125b">
+  <link rel="stylesheet" href="/css/orders.css?v=20261125b">
+</head>
+<body>
+  <div id="headerRoot"></div>
+
+  <main class="container orders-page">
+    <div class="page-head">
+      <div>
+        <h1>我的票夹</h1>
+        <p>已支付订单可在开场前 2 小时退票或改签，开场前 10 分钟会收到桌面提醒</p>
+      </div>
+      <div class="actions">
+        <button class="btn btn-ghost btn-sm" id="notifyBtn">开启开场提醒</button>
+        <a class="btn btn-primary btn-sm" href="/index.html#now">继续购票</a>
+      </div>
+    </div>
+
+    <div class="order-stats" id="orderStats"></div>
+    <div class="order-tabs" id="orderTabs"></div>
+
+    <div class="order-list" id="orderList">
+      <div class="skeleton" style="height:150px;border-radius:20px"></div>
+    </div>
+  </main>
+
+  <div id="footerRoot"></div>
+
+  <script src="/js/api.js?v=20261125b"></script>
+  <script src="/js/ui.js?v=20261125b"></script>
+  <script src="/js/orders.js?v=20261125b"></script>
+</body>
+</html>

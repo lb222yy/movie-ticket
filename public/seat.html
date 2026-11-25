@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>选座购票 · CineMax</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/base.css?v=20261125b">
+  <link rel="stylesheet" href="/css/seat.css?v=20261125b">
+</head>
+<body>
+  <div id="headerRoot"></div>
+
+  <main class="container seat-page">
+    <a class="back-link" id="backLink" href="/index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>
+      返回影片详情
+    </a>
+
+    <div id="resumeBox"></div>
+
+    <section class="showtime-bar" id="showtimeBar">
+      <div class="skeleton" style="width:52px;height:74px"></div>
+      <div class="st-info">
+        <div class="skeleton" style="height:20px;width:180px"></div>
+        <div class="skeleton" style="height:13px;width:260px;margin-top:10px"></div>
+      </div>
+    </section>
+
+    <div class="seat-layout">
+      <section class="seat-card">
+        <div class="screen-wrap">
+          <div class="screen"></div>
+          <div class="screen-label">S C R E E N · 银 幕</div>
+        </div>
+        <div class="seat-scroll">
+          <div class="seat-grid" id="seatGrid">
+            <div class="skeleton" style="width:320px;height:240px"></div>
+          </div>
+        </div>
+        <div class="seat-legend">
+          <span class="legend-item"><i class="legend-dot"></i>可选</span>
+          <span class="legend-item"><i class="legend-dot vip"></i>VIP 座</span>
+          <span class="legend-item"><i class="legend-dot couple"></i>情侣座</span>
+          <span class="legend-item"><i class="legend-dot selected"></i>已选</span>
+          <span class="legend-item"><i class="legend-dot sold"></i>已售</span>
+          <span class="legend-item"><i class="legend-dot locked"></i>他人锁定</span>
+        </div>
+      </section>
+
+      <aside class="summary" id="summary">
+        <h3>订单确认 <span id="summarySeatCount">已选 0 座</span></h3>
+        <div class="sel-seats" id="selectedSeats">
+          <span class="sel-empty">点击座位图中可选的座位</span>
+        </div>
+        <div class="price-row"><span>票价</span><span id="priceBase">—</span></div>
+        <div class="price-row"><span>服务费</span><span>免费</span></div>
+        <div class="price-row total"><span>合计</span><b id="priceTotal">¥0.00</b></div>
+        <div class="lock-timer hidden" id="lockTimer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+          座位已锁定，请在 <b id="timerText">15:00</b> 内完成支付
+        </div>
+        <button class="btn btn-primary btn-block btn-lg" id="confirmBtn" disabled>请选择座位</button>
+        <p class="summary-tip">· 每单最多可选 6 个座位<br>· 开场前 2 小时可退票 / 改签<br>· 支付成功后凭二维码或取票码入场</p>
+      </aside>
+    </div>
+  </main>
+
+  <div id="footerRoot"></div>
+
+  <script src="/js/api.js?v=20261125b"></script>
+  <script src="/js/ui.js?v=20261125b"></script>
+  <script src="/js/seat.js?v=20261125b"></script>
+</body>
+</html>

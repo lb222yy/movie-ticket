@@ -1,0 +1,19 @@
+# Render.com 部署蓝图：新建 Blueprint 并指向本仓库即可
+# 注意：SQLite 需要持久化磁盘，免费实例不支持 disk，请选择付费实例或改用云服务器
+services:
+  - type: web
+    name: cinemax
+    runtime: node
+    plan: starter
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 24.11.1
+      - key: JWT_SECRET
+        generateValue: true
+    disk:
+      name: cinemax-data
+      mountPath: /opt/render/project/src/database
+      sizeGB: 1

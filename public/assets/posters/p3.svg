@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#140d12"/><stop offset="0.55" stop-color="#060709"/><stop offset="1" stop-color="#030407"/>
+    </linearGradient>
+    <linearGradient id="planetA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff3b5c" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#2a1420"/><stop offset="1" stop-color="#04070d"/>
+    </linearGradient>
+    <radialGradient id="glowA"><stop offset="0" stop-color="#ff3b5c" stop-opacity="0.5"/><stop offset="1" stop-color="#ff3b5c" stop-opacity="0"/></radialGradient>
+    <radialGradient id="moonA"><stop offset="0" stop-color="#fff4d6"/><stop offset="0.7" stop-color="#ff3b5c" stop-opacity="0.9"/><stop offset="1" stop-color="#ff3b5c" stop-opacity="0"/></radialGradient>
+    <radialGradient id="redGlow"><stop offset="0" stop-color="#ff3b5c" stop-opacity="0.55"/><stop offset="1" stop-color="#ff3b5c" stop-opacity="0"/></radialGradient>
+    <linearGradient id="seaA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff3b5c" stop-opacity="0.55"/><stop offset="1" stop-color="#060709"/>
+    </linearGradient>
+    <linearGradient id="sunA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3d0"/><stop offset="1" stop-color="#ff6b3d" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="deepSea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a1420"/><stop offset="0.6" stop-color="#060709"/><stop offset="1" stop-color="#02080b"/>
+    </linearGradient>
+    <radialGradient id="tealGlow"><stop offset="0" stop-color="#ff3b5c" stop-opacity="0.4"/><stop offset="1" stop-color="#ff3b5c" stop-opacity="0"/></radialGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity="0.55"/><stop offset="0.28" stop-color="#000" stop-opacity="0"/>
+      <stop offset="0.62" stop-color="#000" stop-opacity="0.35"/><stop offset="1" stop-color="#000" stop-opacity="0.94"/>
+    </linearGradient>
+    
+  <filter id="grain3" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+  </filter>
+  </defs>
+  <rect width="600" height="900" fill="url(#bg3)"/>
+  
+  <g>
+    <rect x="0" y="504.00000000000006" width="600" height="396" fill="#05060a" opacity="0.82"/>
+    <g><rect x="72" y="378" width="60" height="306" fill="#0a0b10" opacity="0.9"/>
+       <rect x="79.2" y="414" width="7.2" height="10.8" fill="#ff3b5c" opacity="0.55"/><rect x="168.00000000000003" y="342" width="60" height="306" fill="#0a0b10" opacity="0.9"/>
+       <rect x="175.20000000000002" y="378.00000000000006" width="7.2" height="10.8" fill="#ff3b5c" opacity="0.55"/><rect x="264" y="306" width="60" height="306" fill="#0a0b10" opacity="0.9"/>
+       <rect x="271.2" y="342" width="7.2" height="10.8" fill="#ff3b5c" opacity="0.55"/><rect x="372" y="270" width="60" height="306" fill="#0a0b10" opacity="0.9"/>
+       <rect x="379.2" y="306" width="7.2" height="10.8" fill="#ff3b5c" opacity="0.55"/><rect x="468" y="234" width="60" height="306" fill="#0a0b10" opacity="0.9"/>
+       <rect x="475.20000000000005" y="270.00000000000006" width="7.2" height="10.8" fill="#ff3b5c" opacity="0.55"/><rect x="540" y="197.99999999999997" width="60" height="306" fill="#0a0b10" opacity="0.9"/>
+       <rect x="547.2" y="234" width="7.2" height="10.8" fill="#ff3b5c" opacity="0.55"/>
+    </g>
+    <line x1="0" y1="315" x2="-16" y2="477" stroke="#ff3b5c" stroke-width="0.7" opacity="0.05"/><line x1="41" y1="352" x2="25" y2="514" stroke="#ff3b5c" stroke-width="0.7" opacity="0.08"/><line x1="82" y1="389" x2="66" y2="551" stroke="#ff3b5c" stroke-width="0.7" opacity="0.11"/><line x1="123" y1="426" x2="107" y2="588" stroke="#ff3b5c" stroke-width="0.7" opacity="0.14"/><line x1="164" y1="463" x2="148" y2="625" stroke="#ff3b5c" stroke-width="0.7" opacity="0.17"/><line x1="205" y1="500" x2="189" y2="662" stroke="#ff3b5c" stroke-width="0.7" opacity="0.05"/><line x1="246" y1="537" x2="230" y2="699" stroke="#ff3b5c" stroke-width="0.7" opacity="0.08"/><line x1="287" y1="574" x2="271" y2="736" stroke="#ff3b5c" stroke-width="0.7" opacity="0.11"/><line x1="328" y1="611" x2="312" y2="773" stroke="#ff3b5c" stroke-width="0.7" opacity="0.14"/><line x1="369" y1="333" x2="353" y2="495" stroke="#ff3b5c" stroke-width="0.7" opacity="0.17"/><line x1="410" y1="370" x2="394" y2="532" stroke="#ff3b5c" stroke-width="0.7" opacity="0.05"/><line x1="451" y1="407" x2="435" y2="569" stroke="#ff3b5c" stroke-width="0.7" opacity="0.08"/><line x1="492" y1="444" x2="476" y2="606" stroke="#ff3b5c" stroke-width="0.7" opacity="0.11"/><line x1="533" y1="481" x2="517" y2="643" stroke="#ff3b5c" stroke-width="0.7" opacity="0.14"/><line x1="574" y1="518" x2="558" y2="680" stroke="#ff3b5c" stroke-width="0.7" opacity="0.17"/><line x1="15" y1="555" x2="-1" y2="717" stroke="#ff3b5c" stroke-width="0.7" opacity="0.05"/><line x1="56" y1="592" x2="40" y2="754" stroke="#ff3b5c" stroke-width="0.7" opacity="0.08"/><line x1="97" y1="629" x2="81" y2="791" stroke="#ff3b5c" stroke-width="0.7" opacity="0.11"/><line x1="138" y1="351" x2="122" y2="513" stroke="#ff3b5c" stroke-width="0.7" opacity="0.14"/><line x1="179" y1="388" x2="163" y2="550" stroke="#ff3b5c" stroke-width="0.7" opacity="0.17"/><line x1="220" y1="425" x2="204" y2="587" stroke="#ff3b5c" stroke-width="0.7" opacity="0.05"/><line x1="261" y1="462" x2="245" y2="624" stroke="#ff3b5c" stroke-width="0.7" opacity="0.08"/><line x1="302" y1="499" x2="286" y2="661" stroke="#ff3b5c" stroke-width="0.7" opacity="0.11"/><line x1="343" y1="536" x2="327" y2="698" stroke="#ff3b5c" stroke-width="0.7" opacity="0.14"/><line x1="384" y1="573" x2="368" y2="735" stroke="#ff3b5c" stroke-width="0.7" opacity="0.17"/><line x1="425" y1="610" x2="409" y2="772" stroke="#ff3b5c" stroke-width="0.7" opacity="0.05"/><line x1="466" y1="332" x2="450" y2="494" stroke="#ff3b5c" stroke-width="0.7" opacity="0.08"/><line x1="507" y1="369" x2="491" y2="531" stroke="#ff3b5c" stroke-width="0.7" opacity="0.11"/><line x1="548" y1="406" x2="532" y2="568" stroke="#ff3b5c" stroke-width="0.7" opacity="0.14"/><line x1="589" y1="443" x2="573" y2="605" stroke="#ff3b5c" stroke-width="0.7" opacity="0.17"/><line x1="30" y1="480" x2="14" y2="642" stroke="#ff3b5c" stroke-width="0.7" opacity="0.05"/><line x1="71" y1="517" x2="55" y2="679" stroke="#ff3b5c" stroke-width="0.7" opacity="0.08"/><line x1="112" y1="554" x2="96" y2="716" stroke="#ff3b5c" stroke-width="0.7" opacity="0.11"/><line x1="153" y1="591" x2="137" y2="753" stroke="#ff3b5c" stroke-width="0.7" opacity="0.14"/><line x1="194" y1="628" x2="178" y2="790" stroke="#ff3b5c" stroke-width="0.7" opacity="0.17"/><line x1="235" y1="350" x2="219" y2="512" stroke="#ff3b5c" stroke-width="0.7" opacity="0.05"/><line x1="276" y1="387" x2="260" y2="549" stroke="#ff3b5c" stroke-width="0.7" opacity="0.08"/><line x1="317" y1="424" x2="301" y2="586" stroke="#ff3b5c" stroke-width="0.7" opacity="0.11"/><line x1="358" y1="461" x2="342" y2="623" stroke="#ff3b5c" stroke-width="0.7" opacity="0.14"/><line x1="399" y1="498" x2="383" y2="660" stroke="#ff3b5c" stroke-width="0.7" opacity="0.17"/><line x1="440" y1="535" x2="424" y2="697" stroke="#ff3b5c" stroke-width="0.7" opacity="0.05"/><line x1="481" y1="572" x2="465" y2="734" stroke="#ff3b5c" stroke-width="0.7" opacity="0.08"/><line x1="522" y1="609" x2="506" y2="771" stroke="#ff3b5c" stroke-width="0.7" opacity="0.11"/><line x1="563" y1="331" x2="547" y2="493" stroke="#ff3b5c" stroke-width="0.7" opacity="0.14"/>
+    <circle cx="300" cy="324" r="228" fill="url(#redGlow)" opacity="0.5"/>
+    <g fill="#07080c">
+      <path d="M252 648 q12 -162 30 0 l12 0 l0 108 l-54 0 Z"/>
+      <circle cx="267" cy="459" r="13.2"/>
+    </g>
+    <path d="M0 810 L600 774 L600 900 L0 900 Z" fill="#05060a"/>
+    <rect x="0" y="504.00000000000006" width="600" height="1" fill="#ff3b5c" opacity="0.35"/>
+  </g>
+  <rect width="600" height="900" fill="url(#shade)"/>
+  <rect width="600" height="900" filter="url(#grain3)" opacity="0.6"/>
+
+  <g font-family="'Microsoft YaHei','PingFang SC',sans-serif">
+    <text x="46" y="62" font-size="15" letter-spacing="7" fill="#ff3b5c" opacity="0.9">CINEMAX ORIGINAL</text>
+    <line x1="46" y1="80" x2="150" y2="80" stroke="#ff3b5c" stroke-width="1" opacity="0.5"/>
+
+    <g fill="#ffffff">
+      <text x="42" y="642" font-size="92" font-weight="800" letter-spacing="6" style="paint-order:stroke;stroke:#00000055;stroke-width:2">暗夜</text>
+      <text x="42" y="732" font-size="92" font-weight="800" letter-spacing="6" style="paint-order:stroke;stroke:#00000055;stroke-width:2">追凶</text>
+    </g>
+    <text x="46" y="774" font-size="14" letter-spacing="5" fill="#ff3b5c" opacity="0.95">NIGHT CHASE</text>
+    <line x1="46" y1="800" x2="554" y2="800" stroke="#ffffff" stroke-width="0.7" opacity="0.25"/>
+    <text x="46" y="828" font-size="15" fill="#ffffff" opacity="0.78" letter-spacing="2">犯罪 / 悬疑</text>
+    <text x="554" y="828" text-anchor="end" font-size="15" fill="#ff3b5c" letter-spacing="2">2026.11.18 全国上映</text>
+    <text x="46" y="862" font-size="12" fill="#ffffff" opacity="0.4" letter-spacing="2">DOLBY ATMOS · IMAX · CINITY</text>
+  </g>
+  <rect x="14" y="14" width="572" height="872" fill="none" stroke="#ffffff" stroke-width="0.6" opacity="0.16"/>
+</svg>

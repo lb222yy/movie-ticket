@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760">
+  <defs>
+    <linearGradient id="b4" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#2c5f7c"/><stop offset="0.5" stop-color="#0d1b2a"/><stop offset="1" stop-color="#020306"/>
+    </linearGradient>
+    <linearGradient id="fade4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05070c" stop-opacity="0.55"/><stop offset="0.45" stop-color="#05070c" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#05070c" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="left4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#05070c" stop-opacity="0.92"/><stop offset="0.55" stop-color="#05070c" stop-opacity="0.25"/><stop offset="1" stop-color="#05070c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="planetA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd9a8"/><stop offset="0.6" stop-color="#e8a87c"/><stop offset="1" stop-color="#04070d"/></linearGradient>
+    <radialGradient id="glowA"><stop offset="0" stop-color="#ffd9a8" stop-opacity="0.45"/><stop offset="1" stop-color="#ffd9a8" stop-opacity="0"/></radialGradient>
+    <radialGradient id="moonA"><stop offset="0" stop-color="#fff4d6"/><stop offset="1" stop-color="#ffd9a8" stop-opacity="0"/></radialGradient>
+    <radialGradient id="redGlow"><stop offset="0" stop-color="#ffd9a8" stop-opacity="0.5"/><stop offset="1" stop-color="#ffd9a8" stop-opacity="0"/></radialGradient>
+    <linearGradient id="seaA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd9a8" stop-opacity="0.5"/><stop offset="1" stop-color="#0d1b2a"/></linearGradient>
+    <linearGradient id="sunA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3d0"/><stop offset="1" stop-color="#ff9e7a" stop-opacity="0.4"/></linearGradient>
+    <linearGradient id="deepSea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8a87c"/><stop offset="1" stop-color="#02080b"/></linearGradient>
+    <radialGradient id="tealGlow"><stop offset="0" stop-color="#ffd9a8" stop-opacity="0.4"/><stop offset="1" stop-color="#ffd9a8" stop-opacity="0"/></radialGradient>
+    
+  <filter id="grainbd4" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+  </filter>
+  </defs>
+  <rect width="1600" height="760" fill="url(#b4)"/>
+  
+  <g>
+    <circle cx="800" cy="228" r="320" fill="url(#sunA)" opacity="0.95"/>
+    <rect x="0" y="380" width="1600" height="380" fill="url(#seaA)" opacity="0.85"/>
+    <rect x="0" y="402.8" width="1600" height="1.2" fill="#ffd9a8" opacity="0.30"/><rect x="0" y="437.00000000000006" width="1600" height="1.2" fill="#ffd9a8" opacity="0.28"/><rect x="0" y="471.2" width="1600" height="1.2" fill="#ffd9a8" opacity="0.26"/><rect x="0" y="505.40000000000003" width="1600" height="1.2" fill="#ffd9a8" opacity="0.24"/><rect x="0" y="539.6" width="1600" height="1.2" fill="#ffd9a8" opacity="0.22"/><rect x="0" y="573.8" width="1600" height="1.2" fill="#ffd9a8" opacity="0.20"/><rect x="0" y="608" width="1600" height="1.2" fill="#ffd9a8" opacity="0.18"/><rect x="0" y="642.1999999999999" width="1600" height="1.2" fill="#ffd9a8" opacity="0.16"/><rect x="0" y="676.4" width="1600" height="1.2" fill="#ffd9a8" opacity="0.14"/>
+    <path d="M224.00000000000003 380 q576 45.6 1152 0" stroke="#ffd9a8" stroke-width="1.4" fill="none" opacity="0.7"/>
+    <g opacity="0.9">
+      <rect x="992" y="471.2" width="320" height="98.8" fill="#e6d3b8"/>
+      <rect x="992" y="471.2" width="320" height="15.200000000000001" fill="#b08a63"/>
+      <rect x="1048" y="505.40000000000003" width="176" height="6.08" fill="#8a6b4a" opacity="0.7"/>
+      <rect x="992" y="570" width="32" height="45.6" fill="#7a5b3c"/>
+    </g>
+    <g opacity="0.55" fill="#ffd9a8">
+      <circle cx="320" cy="182.4" r="2"/><circle cx="416" cy="136.79999999999998" r="1.4"/>
+      <circle cx="512" cy="197.6" r="1.1"/>
+    </g>
+    <path d="M0 653.6 q480 -38 960 0 q384 30.400000000000002 640 -15.200000000000001 L1600 760 L0 760 Z" fill="#08131d" opacity="0.9"/>
+  </g>
+  <rect width="1600" height="760" fill="url(#fade4)"/>
+  <rect width="1120" height="760" fill="url(#left4)"/>
+  <rect width="1600" height="760" filter="url(#grainbd4)" opacity="0.5"/>
+</svg>

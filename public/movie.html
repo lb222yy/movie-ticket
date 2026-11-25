@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>影片详情 · CineMax</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/base.css?v=20261125b">
+  <link rel="stylesheet" href="/css/movie.css?v=20261125b">
+</head>
+<body>
+  <div id="headerRoot"></div>
+
+  <main>
+    <section class="movie-hero" id="movieHero">
+      <div class="movie-hero-bg" id="movieBg"></div>
+      <div class="container movie-hero-inner" id="movieInfo">
+        <div class="movie-poster skeleton" style="border:none"></div>
+        <div class="movie-main">
+          <div class="skeleton" style="height:44px;width:60%"></div>
+          <div class="skeleton" style="height:16px;width:40%;margin-top:14px"></div>
+          <div class="skeleton" style="height:80px;width:100%;margin-top:24px"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="castSection"></section>
+
+    <section class="container booking" id="booking">
+      <div class="section-head booking-head">
+        <div>
+          <h2 class="section-title">选择场次</h2>
+          <p class="section-sub" id="bookingSub">选择日期与影城，进入选座</p>
+        </div>
+        <div class="date-tabs" id="dateTabs"></div>
+      </div>
+      <div id="showtimeList"></div>
+    </section>
+
+    <section class="container section" id="comments">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">观众评价</h2>
+          <p class="section-sub">真实观影感受，帮助你做决定</p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <aside class="rating-summary" id="ratingSummary">
+          <div class="rating-big"><b>—</b><span>暂无评分</span></div>
+        </aside>
+        <div>
+          <div id="commentFormBox"></div>
+          <div class="comment-list" id="commentList"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footerRoot"></div>
+
+  <script src="/js/api.js?v=20261125b"></script>
+  <script src="/js/ui.js?v=20261125b"></script>
+  <script src="/js/movie.js?v=20261125b"></script>
+</body>
+</html>
